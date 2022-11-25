@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UnityUniverityApp">
         <activity
+            android:name=".register"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
             android:name=".home"
             android:exported="false" />
         <activity

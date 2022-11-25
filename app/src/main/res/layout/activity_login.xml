@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <RelativeLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:clickable="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/back">
+
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="120dp"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginEnd="32dp"
+            android:background="#34398B"
+            android:ems="10"
+            android:hint="enter your email"
+            android:padding="10dp"
+            android:textColorHint="#CCCBCB"
+            android:textColor="@color/white"
+            android:textSize="16sp">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/txt3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="290dp"
+            android:layout_marginEnd="32dp"
+            android:background="#34398B"
+            android:ems="10"
+            android:hint="enter your password"
+            android:padding="10dp"
+            android:textColorHint="#CCCBCB"
+            android:textColor="@color/white"
+            android:textSize="16sp">
+
+        </EditText>
+
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="400dp"
+            android:text="Login"
+            android:textSize="18dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="470dp"
+            android:text="Forget Password"
+            android:textSize="18dp">
+
+        </Button>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

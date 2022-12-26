@@ -10,6 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UnityUniverityApp">
         <activity
+            android:name=".data"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".register"
             android:exported="false" />
         <activity

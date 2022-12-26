@@ -39,7 +39,7 @@
         </TextView>
 
         <EditText
-            android:id="@+id/txt2"
+            android:id="@+id/efname"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="32dp"
@@ -56,28 +56,11 @@
         </EditText>
 
         <EditText
-            android:id="@+id/txt3"
+            android:id="@+id/elname"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="280dp"
-            android:layout_marginEnd="32dp"
-            android:background="#34398B"
-            android:ems="10"
-            android:hint="Middle Name"
-            android:padding="10dp"
-            android:textColor="@color/white"
-            android:textColorHint="#CCCBCB"
-            android:textSize="16sp">
-
-        </EditText>
-
-        <EditText
-            android:id="@+id/txt4"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="340dp"
             android:layout_marginEnd="32dp"
             android:background="#34398B"
             android:ems="10"
@@ -90,7 +73,25 @@
         </EditText>
 
         <EditText
-            android:id="@+id/txt5"
+            android:id="@+id/eemail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="340dp"
+            android:layout_marginEnd="32dp"
+            android:background="#34398B"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="#CCCBCB"
+            android:textSize="16sp">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/epassword"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="32dp"
@@ -98,7 +99,8 @@
             android:layout_marginEnd="32dp"
             android:background="#34398B"
             android:ems="10"
-            android:hint="Nationality"
+            android:hint="Password"
+            android:inputType="textPassword"
             android:padding="10dp"
             android:textColor="@color/white"
             android:textColorHint="#CCCBCB"
@@ -129,7 +131,7 @@
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/radio1"
+                android:id="@+id/emale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
@@ -139,7 +141,7 @@
 
 
             <RadioButton
-                android:id="@+id/radio2"
+                android:id="@+id/efemale"
                 android:paddingRight="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -154,7 +156,7 @@
 
 
         <EditText
-            android:id="@+id/txt7"
+            android:id="@+id/edepartment"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="32dp"
@@ -171,7 +173,7 @@
         </EditText>
 
         <EditText
-            android:id="@+id/txt8"
+            android:id="@+id/esection"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="32dp"
@@ -179,7 +181,7 @@
             android:layout_marginEnd="32dp"
             android:background="#34398B"
             android:ems="10"
-            android:hint="Campus"
+            android:hint="Section"
             android:padding="10dp"
             android:textColor="@color/white"
             android:textColorHint="#CCCBCB"
@@ -194,7 +196,7 @@
             android:layout_height="55dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="660dp"
-            android:text="Login"
+            android:text="Register"
             android:textSize="18dp">
 
         </Button>

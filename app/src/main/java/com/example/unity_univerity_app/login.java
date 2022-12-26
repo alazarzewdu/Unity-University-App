@@ -62,7 +62,7 @@ public class login extends AppCompatActivity {
 //    });
 }
 
-public void login () {
+    public void login () {
 
         String email = lemail.getText().toString();
         String pass = lpassword.getText().toString();
@@ -75,11 +75,13 @@ public void login () {
             String userDb = checkUser(email,pass);
 
             Intent i = new Intent(login.this,data.class);
+            i.putExtra("email", userDb);
             startActivity(i);
 
         }
         else {
             Toast.makeText(this, "error login", Toast.LENGTH_SHORT).show();
+
         }
 
 }
@@ -90,8 +92,8 @@ public void login () {
             Cursor cursor = db.rawQuery("select email,password from student where email = ? and password = ? ", new String[]{email,pass});
             if(cursor.getCount() > 0) {
                 cursor.moveToFirst();
-                String email1 = cursor.getString(1);
-                String password1 = cursor.getString(2);
+                String email1 = cursor.getString(0);
+                String password1 = cursor.getString(1);
                 SharedPreferences.Editor sp = getSharedPreferences("email",MODE_PRIVATE).edit();
                 sp.putString("email", email1);
                 sp.apply();

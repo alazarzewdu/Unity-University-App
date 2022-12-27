@@ -6,13 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".data">
 
-    <TextView
-        android:id="@+id/users"
+
+
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="user"
         tools:ignore="MissingConstraints">
 
-    </TextView>
+        <TextView
+            android:layout_marginTop="280dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Unity App"
+            android:textColor="@color/purple_700"
+            android:textSize="30sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/users"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="320dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="user"
+            android:textSize="30sp"
+            tools:ignore="MissingConstraints">
+
+        </TextView>
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
